@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  transition: 0.3s all ease;
+}
+
+.App {
+  padding: 2rem 9%;
+  background: var(--background-color);
+}
+
+input {
+  color: #000;
+}
+
+button:hover {
+  cursor: pointer;
+  background: var(--button-hover-color);
+  border: 1px solid var(--button-hover-color);
+}
+
+:root {
+  /* --buttons-color: #3b347d;
+  --button-hover-color: #2d2669; */
+  --buttons-color: rgb(41, 32, 66);
+  --button-hover-color: rgb(33, 26, 52);
+  --background-color: #191525;
+  --title-border-color: #180e4f;
+  --title-color: rgb(234, 200, 9);
+}
+
+/* header section */
+
+.header {
+  text-align: center;
+  padding: 2.5rem 2rem;
+  width: 100%;
+  margin: 0 auto 2rem auto;
+  border-radius: 30px;
+}
+
+.header h1 {
+  font-size: 4rem;
+  color: var(--title-color);
+}
+
+/* filters section */
+
+.filters-search {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 3rem 2rem 3rem;
+}
+
+.filters-search .filters-container .filters {
+  list-style-type: none;
+  display: flex;
+}
+
+.filters-search .filters-container .filters li {
+  margin-right: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.filters-search .filters-container .filters li:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #d6d6e5;
+  color: #d6d6e5;
+}
+
+.search-container label {
+  font-size: 1.2rem;
+}
+
+.search-container input {
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgb(203, 200, 214);
+  background: rgb(203, 200, 214);
+}
+
+/* buttons section */
+
+.buttons-container {
+  margin: 1rem 0;
+}
+
+.buttons-container button {
+  margin-right: 0.4rem;
+  font-size: 1.15rem;
+  padding: 0.5rem 2.6rem;
+  border-radius: 10px;
+  border: 1px solid var(--buttons-color);
+  background: var(--buttons-color);
+}
+
+.buttons-container button:hover {
+  cursor: pointer;
+  background: var(--button-hover-color);
+  border: 1px solid var(--button-hover-color);
+}
+
+/* add item form */
+
+.add-items-form {
+  margin: 1.2rem 0;
+  border-radius: 2px solid #fff;
+}
+
+.add-items-form form {
+  padding: 2rem 0;
+}
+
+.add-items-form form button {
+  font-size: 1.1rem;
+  padding: 0.4rem 2.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--buttons-color);
+  background: var(--buttons-color);
+}
+
+.add-items-form form button:hover {
+  background: var(--button-hover-color);
+  border: 1px solid var(--button-hover-color);
+  cursor: pointer;
+}
+
+.add-items-form form input {
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgb(203, 200, 214);
+  margin-right: 0.7rem;
+  background: rgb(203, 200, 214);
+}
+
+.add-items-form .inputs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputs-container label {
+  font-size: 1.1rem;
+}
+
+/* todo list section */
+
+.todos-list {
+  padding: 1rem 0 3rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.todo-item {
+  width: 48.25%;
+  border: 2px solid var(--title-border-color);
+  padding: 1.3rem 2rem;
+  border-radius: 10px;
+}
+
+.todo-item .test {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-item .test h1 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.todo-item .test input {
+  width: 4.5%;
+  margin-top: -0.5rem;
+}
+
+.todo-item .test input:hover {
+  cursor: pointer;
+}
+
+.todo-item p {
+  font-size: 1rem;
+  margin-bottom: 1.8rem;
+}
+
+.todo-item button {
+  font-size: 1rem;
+  padding: 0.4rem 1.3rem;
+  border-radius: 10px;
+  border: 1px solid var(--buttons-color);
+  background: var(--buttons-color);
+}
+
+.todo-item button:hover {
+  cursor: pointer;
+  background: var(--button-hover-color);
+  border: 1px solid var(--button-hover-color);
+}
+
+.edit-btn {
+  margin-right: 0.4rem;
+}
+
+/* daily motives section */
+
+.daily-motives {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.daily-motives p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+}
+
+.daily-motives button {
+  font-size: 1.2rem;
+  padding: 0.6rem 1.8rem;
+  border-radius: 10px;
+  border: 1px solid var(--buttons-color);
+  background: var(--buttons-color);
+}
+
+.daily-motives button:hover {
+  cursor: pointer;
+  background: var(--button-hover-color);
+  border: 1px solid var(--button-hover-color);
+}
+
+/* footer section */
+
+.footer {
+  text-align: center;
+  padding: 2rem 0 0 0;
+}
+
+.footer p {
+  font-size: 1.05rem;
+}
+
+.footer p span {
+  color: var(--title-color);
+}
+
+.glass-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 0;
+  text-decoration: none;
+  border-radius: 8px;
+  background-color: rgb(39, 31, 61);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-btn::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -80px;
+  animation: shine 2.4s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+  35% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
